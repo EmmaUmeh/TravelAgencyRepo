@@ -1,304 +1,50 @@
 import React from "react";
-import KitchenSection from '../images/shawama.jpg';
-import KitchenSection2 from '../images/shawama_2.jpg';
-import Chicken from '../images/chicken_meat.jpg';
-import { FiStar } from "react-icons/fi";
+import sectionImg from '../images/man_taking_tourism.png';
+import Groupimg from '../images/Group.png';
 const Section = () =>{
+  const userCounter = {
+    counterout: '25+ memebers'
+  }
     return(
-        <div className="section">
-                <div className="sectionchild">
-                <div className="hometxt">
-                <h5>Home Kitchen</h5>
-                </div>
-
-                <div className="table">
-                    <tbody>
-                        <tr>
-                        <td className="all">
-                            <button>All</button>
-                        </td>
-                        <td className="button">
-                            <button>Button</button>
-                        </td>
-                        <td className="deliver">
-                            <button>Free delivery</button>
-                        </td>
-                        <td className="new">
-                            <button>New</button>
-                        </td>
-                        <td className="coming">
-                            <button>Coming</button>
-                        </td>
-
-                        </tr>
-                    </tbody>
-                </div>
+      <div className="sectionbg">
+            <div className="sectionchild">
+                  <div className="sectionimg">
+                    <img src={sectionImg} alt="sectionimg" />
+                  </div>
 
 
-                <div className="option">
-                    <select>
-                        <option className="option">Filters</option>
-                        <option>Breakfast</option>
-                        <option>Lunch</option>
-                            <option>Supper</option>
-                            </select>
+            <div className="travelsection">
+                <div className="exclusivetxt">Exclusive World Trip</div>
+                  <div className="taketxt"><h4>Take The Best Weeekend And Enjoy Your Plans</h4></div>
+                <div className="sectionptag">
+                      <p>
+                      Traveling around the world makes the world accessible in all sphere.Our world now based on technology has now involve in world quick transport,fast medium of transporting individuals from one station to another.
+                      </p>
+                  </div>
+                  <div className="groupimg">
+                    <div className="group1">
+                    <img src={Groupimg} alt="" />
                     </div>
-                </div>
-
-
-                
-               
-
-                    <div className="herodetails">
-                        <div className="herodetails1">
-                        <img src={KitchenSection}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-
-                            {/* kitchensection2 */}
-                            <div className="herodetails2">
-                        <img src={KitchenSection2}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-
-                            {/* kitchensection3 */}
-                            <div className="herodetails3">
-                        <img src={Chicken}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made chicken</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-                        
-                            {/* kitchensection4 */}
-                            <div className="herodetails4">
-                        <img src={KitchenSection2}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-                    </div>
-                        
-                        {/* section2 */}
-
-
-                        
-                    <div className="herodetails">
-                        <div className="herodetails1">
-                        <img src={KitchenSection}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-
-                            {/* kitchensection2 */}
-                            <div className="herodetails2">
-                        <img src={KitchenSection2}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-
-                            {/* kitchensection3 */}
-                            <div className="herodetails3">
-                        <img src={Chicken}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made chicken</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
-                        
-                            {/* kitchensection4 */}
-                            <div className="herodetails4">
-                        <img src={KitchenSection2}/>
-                        <div className="pizzadtl">
-                           <div  className="pizzatxt">
-                           <h4>Home made pizza</h4>
-                           </div>
-                           <div className="dollar">
-                            $19
-                           </div>
-
-                        </div>
-
-                            <div className="ratecontent">
-                                    <div className="rate">
-                                <FiStar size="10"/><span className="ratenmb">{20+20}</span>
-                                     </div>
-
-                                     <div className="btnadder">
-                                        <div>
-                                        <button>+</button>
-                                        </div>
-                                     </div>
-                            </div>
-
-                                <div className="addcart">
-                                    <button>Add cart</button>
-                                </div>
-                        </div>
+                    
+                    <div className="group2">
+                    <img src={Groupimg} alt="" />
                     </div>
 
-                    <div className="mt-5 flex justify-center">
-                        <button className="border border-orange-500 hover:bg-orange-500 hover:text-white btn-txt">+ Load More..</button>
-                    </div>
-        </div>
+                   <div className="group3">
+                   <img src={Groupimg} alt="" />
+                   </div>
+                  </div>
+                  <div className="spancounter">
+                      <span>{userCounter.counterout}</span>
+                  </div>
+
+                  <div className="sectionbtn">
+                    <div className="contactbtn"><button>Contact Us</button></div>
+                    <div className="supportbtn"><button>Support Us</button></div>
+                  </div>
+            </div>
+            </div>
+      </div>
     )
 
   

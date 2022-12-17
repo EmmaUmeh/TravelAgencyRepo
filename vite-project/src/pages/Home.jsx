@@ -1,16 +1,16 @@
 import React from "react";
+import ContactSection from "../components/ContactSection.jsx";
 import HeroSection from "../components/HeroSection.jsx";
 import Section from "../components/Section.jsx";
-import ContactSection from "../components/ContactSection.jsx";
-import Footer from "../components/Footer.jsx";
+import SectionTwo from "../components/SectionTwo.jsx";
 
 const Home = () => {
     return(
         <div>
             <HeroSection />
             <Section />
-            <ContactSection/>
-            <Footer/>
+            <SectionTwo/>
+            <ContactSection />
         </div>
     )
 }

@@ -1,11 +1,16 @@
 import React from "react";
-import Footer from "../components/Footer.jsx";
 import Section from "../components/Section.jsx";
 const About = () => {
+    const Sectionpad = {
+position:'relative',
+top:'60px'
+    }
     return(
         <div>
-            <Section/>
-            <Footer/>
+            
+            <div style={Sectionpad}>
+                <Section/>
+            </div>
         </div>
     )
 }

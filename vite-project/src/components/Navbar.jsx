@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import Logo from "../images/WHAT2EAT.png";
-import { FiSearch } from "react-icons/fi";
-import { FiShoppingBag } from "react-icons/fi";
 import {FiMenu} from "react-icons/fi"
 import { FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import Logoimg from '../images/Travel.png';
+
 const Navbar = () => {
     const [toggleMenu, settoggleMenu] = useState(false);
 
@@ -15,59 +14,49 @@ const Navbar = () => {
         <nav className={toggleMenu ? 'navcontainer expanded':'navcontainer'}>
             <div className="logo">
                 <Link to="/">
-                    <img src={Logo}/>
+                <Link to="/"  className="logo">
+                    <img src={Logoimg}/>
+                </Link>
                 </Link>
             </div>
 
                 <ul className="navlists">
+
                     
-                        <div className="icons2">
-                        <div className="icons-items1">
-                            <FiSearch/>
-                        </div>                    
-                        <div className="icons-items2">
-                            <FiShoppingBag/>
-                        </div>
-                        </div>
-                    
-                    <li className="home text-white">
-                      <Link to="/" onClick={handelClick}>
+                    <li className="">
+                      <Link to="/" onClick={handelClick} className="linkhome">
                         Home 
                       </Link>
                     </li>
 
-                    <li className="about text-white">
-                    <Link to="/about" onClick={handelClick}>
+                    <li className="about text-black">
+                    <Link to="/about" onClick={handelClick} className="linkabout">
                         About 
                       </Link>
                     </li>
 
-                    <li className="menu text-white">
-                    <Link to="/menu" onClick={handelClick}>
-                        Menu
+                    <li className="menu text-black">
+                    <Link to="/menu" onClick={handelClick} className="linktour">
+                        Tour Package
                       </Link>
                     </li>
 
                 
 
-                    <li className="contact text-white">
-                    <Link to="/contact" onClick={handelClick}>
-                        Contact
+                    <li className="contact text-black">
+                    <Link to="/contact" onClick={handelClick} className="linkcontact">
+                        Contact Us
                       </Link>
                     </li>
                 </ul>
 
-                <div className="icons">
-                    <div className="icons-items1">
-                        <FiSearch/>
-                    </div>                    
-                    <div className="icons-items2">
-                        <FiShoppingBag/>
+
+                    <div className="bookingbtn">
+                        <button>Book Ticket</button>
                     </div>
-                </div>
 
                 <div className="menuicons" onClick={handelClick}>
-                {toggleMenu ? <FiX color="white" size="30"/> : <FiMenu color="white" size="30"/>}
+                {toggleMenu ? <FiX color="black" size="35"/> : <FiMenu color="black" size="35"/>}
                 </div>
         </nav>
     )
